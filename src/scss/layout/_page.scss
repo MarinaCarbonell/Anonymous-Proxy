@@ -1,12 +1,67 @@
-*{
-    box-sizing: border-box;
-    color:inherit;
-    text-decoration: none;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+.topSection{
+    border:1px solid red;
+    padding: 45px;
+    &__title{
+        font-family:$primary-font;
+        font-size: rem(14);
+        color: $fifth-color;
+        line-height: 30px;
+        width: 90px;
+        height: 30px;
+        
+    }
+    &__mainTitle{
+        font-family:$secondary-font;
+        font-size: rem(24);
+        color: $first-color;
+        line-height: 30px;
+        text-transform: capitalize;
+        width: 290px;
+        height: 60px; 
+    }
+    &__paragraph{
+        font-family:$primary-font;
+        font-size: rem(18);
+        color: $secondary-color;
+        line-height: 30px;
+        width: 290px;
+        height: 120px;
+    }
+
+    &__bottom{
+        border:2px solid $terciary-color;
+        font-family:$primary-font;
+        font-weight: 400px;
+        font-size: rem(20);
+        color: $terciary-color;
+        height: 45px;
+        width: 76px;
+        border-radius: 22%;     
+    }
 }
 
-.wrapper{
-    padding:15px;
+.section{
+    border:1px solid red;
+    padding: 45px;
+    &__title{
+        font-family:$secondary-font;
+        font-size: rem(24);
+        color: $first-color;
+    }
+    &__article{
+        &h3{
+        font-family:$secondary-font;
+        font-size: rem(18);
+        color: $first-color;
+        }
+        &p{
+        font-family:$primary-font;
+        font-size: rem(18);
+        color: $first-color;
+        }
+    }
+
 }
+
+
+

@@ -2,6 +2,7 @@
 
 $primary-font:'Roboto', sans-serif;
 $secondary-font:'Roboto Slab', serif;
+$defaultFontSize: 16;
 
 //**FONT COLORS**//
 
@@ -17,8 +18,9 @@ $terciary-color:#f26002;
 /*white*/
 $forth-color:#ffffff;
 
-/*soft blue*/
-$fifth: #8ccbea;
+/*light blue*/
+$fifth-color: #8ccbea;
+
 
 //**BACKGROUND COLOR**//
 
@@ -30,4 +32,7 @@ $second-background:#eff9ff;
 
 /*dark-grey-blue*/
 $terciary-background:#304268;
+
+/*cerulean*/
+$forth-background: #0271bc;
 
