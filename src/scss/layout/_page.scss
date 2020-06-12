@@ -1,8 +1,11 @@
+.main{
+    border:1px solid red;
+}
 
 .topSection{
     border:1px solid red;
     padding: 45px;
-    
+
     &__title{
         font-family:$primary-font;
         font-size: rem(14);
@@ -44,28 +47,27 @@
 .section{
     border:1px solid red;
     padding: 45px;
+    display:grid;
+    grid-template-columns: span 5;
+    grid-template-rows: span 5;
+
     &__title{
         font-family:$secondary-font;
         font-size: rem(24);
         color: $first-color;
+        grid-column: 1 / 4;
     }
     &__article{
-        &h3{
+        & h3{
         font-family:$secondary-font;
         font-size: rem(18);
         color: $first-color;
-        width: 184px;
-        height: 30px;
-        padding:53px;
         }
 
-        &p{
+        & p{
         font-family:$primary-font;
         font-size: rem(18);
         color: $first-color;
-        width: 180px;
-        height: 63px;
-        padding:55px;
         }
     }
 
