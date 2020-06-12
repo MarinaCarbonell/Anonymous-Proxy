@@ -1,6 +1,8 @@
+
 .topSection{
     border:1px solid red;
     padding: 45px;
+    
     &__title{
         font-family:$primary-font;
         font-size: rem(14);
@@ -8,7 +10,6 @@
         line-height: 30px;
         width: 90px;
         height: 30px;
-        
     }
     &__mainTitle{
         font-family:$secondary-font;
@@ -53,15 +54,19 @@
         font-family:$secondary-font;
         font-size: rem(18);
         color: $first-color;
+        width: 184px;
+        height: 30px;
+        padding:53px;
         }
+
         &p{
         font-family:$primary-font;
         font-size: rem(18);
         color: $first-color;
+        width: 180px;
+        height: 63px;
+        padding:55px;
         }
     }
 
 }
-
-
-
