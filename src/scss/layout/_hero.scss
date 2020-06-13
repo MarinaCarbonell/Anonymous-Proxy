@@ -25,6 +25,10 @@
             line-height: 106px;
             padding-top: 384px;
         }
+        @include desktop() {
+            font-size: rem(100);
+            line-height: 132px;
+        }
     }
     &__claim {
         border: 1px solid red;
