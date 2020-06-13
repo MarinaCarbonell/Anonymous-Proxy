@@ -2,49 +2,54 @@
     border: 1px solid red;
 }
 
-.topSection {
+.topsection {
     border: 1px solid red;
     height: 376px;
+    @include tablet() {
+        height: 330px;
+    }
     &__title {
         font-family: $primary-font;
         font-size: rem(14);
         color: $fifth-color;
         line-height: 30px;
-        width: 90px;
-        height: 30px;
     }
-    &__mainTitle {
+    &__maintitle {
         font-family: $secondary-font;
         font-size: rem(24);
         color: $first-color;
         line-height: 30px;
         text-transform: capitalize;
-        width: 290px;
-        height: 60px;
+        @include tablet() {
+            font-size: rem(26);
+            line-height: 45px;
+        }
     }
     &__paragraph {
         font-family: $primary-font;
         font-size: rem(18);
         color: $secondary-color;
         line-height: 30px;
-        width: 290px;
-        height: 120px;
         padding: 25px 0 0 0;
+        @include tablet() {
+            font-size: rem(20);
+            line-height: 30px;
+        }
     }
     &__buttonGo {
-        border: 2px solid $terciary-color;
+        border: 3px solid $terciary-color;
         font-family: $primary-font;
-        font-weight: 500;
+        font-weight: bold;
         font-size: rem(20);
         color: $terciary-color;
         height: 45px;
         width: 76px;
         border-radius: 42%;
-        display: block;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        text-align: center;
-        margin-top: 40px;
-        padding-top: 10px;
+        margin: 40px 0;
+        padding: 25px 50px;
         transition: transform ease 1s;
         transition: border-color ease 1s;
         transition: color ease 1s;
@@ -52,6 +57,10 @@
             transform: scale(1.2);
             border-color: $fifth-color;
             color: $fifth-color;
+        }
+        @include tablet() {
+            padding: 25px 60px;
+            margin: 30px 0 60px 39px;
         }
     }
 }
@@ -63,12 +72,21 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
+        @include tablet() {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            text-align: center;
+        }
         &--title {
             font-family: $secondary-font;
             font-size: rem(24);
             color: $first-color;
             text-align: center;
             padding: 35px 0 0 0;
+            @include tablet() {
+                grid-column: 1 / 4;
+                text-align: center;
+            }
         }
         &--content {
             text-align: center;
@@ -101,6 +119,10 @@
             transition: color ease 1.5s;
             &:hover {
                 background-color: $forth-background;
+            }
+            @include tablet() {
+                grid-column: 1 / 4;
+                text-align: center;
             }
         }
     }
