@@ -1,51 +1,47 @@
 .hero {
-    border:1px solid red;
-    background:url("../images/cover.jpg");
+    border: 1px solid red;
+    background: url("../images/cover.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100%;
-    position:relative;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    &__title{
-    border:1px solid red;
-    font-family:$secondary-font;
-    font-size: rem(42);
-    color:$forth-color;
-    text-transform: uppercase;
-    height: 110px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    line-height: 55px;
+    &__title {
+        border: 1px solid red;
+        font-family: $secondary-font;
+        font-size: rem(42);
+        color: $forth-color;
+        text-transform: uppercase;
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 55px;
     }
-    &__claim{
-    border:1px solid red;
-    font-family:$primary-font;
-    font-size: rem(16);   
-    color:$forth-color;
-    height: 21px;
-    text-align: center;
+    &__claim {
+        border: 1px solid red;
+        font-family: $primary-font;
+        font-size: rem(16);
+        color: $forth-color;
+        height: 21px;
+        text-align: center;
     }
-    &__button{
-        display:inline-block;
+    &__button {
+        display: inline-block;
         text-align: center;
         margin-left: 50%;
         margin-top: 45px;
         margin-bottom: 53px;
     }
-    &__iconScrollDown{
-        background-color:#ffffff;
+    &__iconScrollDown {
+        background-color: #ffffff;
         height: 45px;
         width: 45px;
         border-radius: 50%;
-        padding:10px;
+        padding: 10px;
     }
-
 }
-
-
-

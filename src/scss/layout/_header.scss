@@ -1,13 +1,11 @@
-
-.header-icon{
-    position:fixed;
-    top:0;
-    z-index: 1;   
-    .menu-icon{
-    height: 44px;
-    width: 44px;
-    background-color: $forth-background;
-    border: 1px solid red;
+.header-icon {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    .menu-icon {
+        height: 44px;
+        width: 44px;
+        background-color: $forth-background;
+        border: 1px solid red;
     }
 }
-

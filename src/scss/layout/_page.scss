@@ -1,29 +1,29 @@
-.main{
-    border:1px solid red;
+.main {
+    border: 1px solid red;
 }
 
-.topSection{
-    border:1px solid red;
+.topSection {
+    border: 1px solid red;
     height: 376px;
-    &__title{
-        font-family:$primary-font;
+    &__title {
+        font-family: $primary-font;
         font-size: rem(14);
         color: $fifth-color;
         line-height: 30px;
         width: 90px;
         height: 30px;
-    }   
-    &__mainTitle{
-        font-family:$secondary-font;
+    }
+    &__mainTitle {
+        font-family: $secondary-font;
         font-size: rem(24);
         color: $first-color;
         line-height: 30px;
         text-transform: capitalize;
         width: 290px;
-        height: 60px; 
+        height: 60px;
     }
-    &__paragraph{
-        font-family:$primary-font;
+    &__paragraph {
+        font-family: $primary-font;
         font-size: rem(18);
         color: $secondary-color;
         line-height: 30px;
@@ -31,10 +31,9 @@
         height: 120px;
         padding: 25px 0 0 0;
     }
-
-    &__buttonGo{
-        border:2px solid $terciary-color;
-        font-family:$primary-font;
+    &__buttonGo {
+        border: 2px solid $terciary-color;
+        font-family: $primary-font;
         font-weight: 500;
         font-size: rem(20);
         color: $terciary-color;
@@ -44,69 +43,66 @@
         display: block;
         align-items: center;
         text-align: center;
-        margin-top:40px;
+        margin-top: 40px;
         padding-top: 10px;
         transition: transform ease 1s;
         transition: border-color ease 1s;
         transition: color ease 1s;
         &:hover {
             transform: scale(1.2);
-            border-color:$fifth-color;
-            color:$fifth-color;
+            border-color: $fifth-color;
+            color: $fifth-color;
         }
-
     }
 }
 
-
-.section{
-    border:1px solid red;
-    &__article{
-        display:grid;
+.section {
+    border: 1px solid red;
+    &__article {
+        display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
-        &--title{
-            font-family:$secondary-font;
+        &--title {
+            font-family: $secondary-font;
             font-size: rem(24);
             color: $first-color;
             text-align: center;
-            padding:35px 0 0 0;
+            padding: 35px 0 0 0;
         }
-        &--content{
+        &--content {
             text-align: center;
-            padding: 0 53px 30px 53px;;
-
-            & h3{
-                font-family:$secondary-font;
+            padding: 0 53px 30px 53px;
+            ;
+            &--title {
+                font-family: $secondary-font;
                 font-size: rem(18);
-                color: $first-color; 
-                padding: 5px 10px 10px 10px;   
+                color: $first-color;
+                padding: 5px 10px 10px 10px;
             }
-            & p{
-                font-family:$primary-font;
+            &--paragraph {
+                font-family: $primary-font;
                 font-size: rem(18);
                 color: $first-color;
                 line-height: 1.6;
             }
         }
-        &--button{
-            background-color:$terciary-color;
+        &--button {
+            background-color: $terciary-color;
             font-size: rem(18);
-            color:$forth-color;
+            color: $forth-color;
             font-family: $primary-font;
             font-weight: 400;
-            padding:15px;
+            padding: 15px;
             border-radius: 40px;
             width: 184px;
             height: 45px;
             margin: auto;
             margin-bottom: 50px;
-            transition:color ease 1.5s;
-            &:hover{
-                background-color:$forth-background;            
+            transition: color ease 1.5s;
+            &:hover {
+                background-color: $forth-background;
             }
         }
     }
 }
-
