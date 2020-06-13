@@ -7,12 +7,12 @@
     width: 100%;
     position:relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     &__title{
     border:1px solid red;
     font-family:$secondary-font;
-    font-size: rem(42);   
+    font-size: rem(42);
     color:$forth-color;
     text-transform: uppercase;
     height: 110px;
@@ -27,11 +27,8 @@
     font-family:$primary-font;
     font-size: rem(16);   
     color:$forth-color;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     height: 21px;
+    text-align: center;
     }
     &__button{
         display:inline-block;

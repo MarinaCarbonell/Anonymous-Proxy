@@ -4,8 +4,6 @@
 
 .topSection{
     border:1px solid red;
-    padding:35px 0 35px 0;
-    align-items: center;
     height: 376px;
     &__title{
         font-family:$primary-font;
@@ -14,8 +12,7 @@
         line-height: 30px;
         width: 90px;
         height: 30px;
-        padding-bottom: 10px;
-    }
+    }   
     &__mainTitle{
         font-family:$secondary-font;
         font-size: rem(24);
@@ -35,17 +32,32 @@
         padding: 25px 0 0 0;
     }
 
-    &__button{
+    &__buttonGo{
         border:2px solid $terciary-color;
         font-family:$primary-font;
-        font-weight: 400px;
+        font-weight: 500;
         font-size: rem(20);
         color: $terciary-color;
         height: 45px;
         width: 76px;
-        border-radius: 22%;
+        border-radius: 42%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin-top:40px;
+        padding-top: 10px;
+        transition: transform ease 1s;
+        transition: border-color ease 1s;
+        transition: color ease 1s;
+        &:hover {
+            transform: scale(1.2);
+            border-color:$fifth-color;
+            color:$fifth-color;
+        }
+
     }
 }
+
 
 .section{
     border:1px solid red;
@@ -89,7 +101,12 @@
             width: 184px;
             height: 45px;
             margin: auto;
+            margin-bottom: 50px;
+            transition:color ease 1.5s;
+            &:hover{
+                background-color:$forth-background;            
+            }
+        }
     }
 }
 
-}
