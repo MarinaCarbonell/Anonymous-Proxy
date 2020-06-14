@@ -8,14 +8,18 @@
 }
 
 .wrapper {
-    max-width: 1200px;
+    max-width: 1280px;
     padding: 0 15px;
     margin: auto;
     width: 100%;
     @include tablet() {
         padding: 0 39px;
     }
+    @include desktop() {
+        padding: 0 81px;
+    }
 }
+
 
 html {
     scroll-behavior: smooth;
