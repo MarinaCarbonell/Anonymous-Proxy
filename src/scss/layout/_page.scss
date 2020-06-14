@@ -8,7 +8,7 @@
     }
     @include desktop() {
         height: 360px;
-        padding: 60px 194px 60px 194px;
+        padding: 60px 194px;
     }
     &__title {
         font-family: $primary-font;
@@ -54,7 +54,7 @@
         color: $terciary-color;
         height: 45px;
         width: 76px;
-        border-radius: 25px 25px 25px 25px;
+        border-radius: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,16 +83,16 @@
     &__article {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(5, 1fr);
         text-align: center;
         height: 624px;
         @include tablet() {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             text-align: center;
             height: 397px;
         }
-        @include tablet() {
+        @include desktop() {
             height: 427px;
         }
         &--title {
