@@ -4,12 +4,14 @@
 
 .topsection {
     border: 1px solid red;
-    height: 376px;
+    max-height: 376px;
+    height: 100%;
     @include tablet() {
-        height: 330px;
+        max-height: 330px;
     }
     @include desktop() {
-        height: 360px;
+        max-height: 360px;
+        height: 100%;
     }
     &__title {
         font-family: $primary-font;
@@ -53,24 +55,27 @@
         color: $terciary-color;
         height: 45px;
         width: 76px;
-        border-radius: 42%;
+        border-radius: 25px 25px 25px 25px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 40px 0;
-        padding: 25px 50px;
+        margin: 30px 0 45px 0;
         transition: transform ease 1s;
         transition: border-color ease 1s;
         transition: color ease 1s;
         &:hover {
+            margin-left: 10px;
             transform: scale(1.2);
             border-color: $fifth-color;
             color: $fifth-color;
         }
         @include tablet() {
-            padding: 25px 60px;
-            margin: 30px 0 60px 39px;
+            width: 91px;
+            margin-bottom: 60px;  
         }
+        @include desktop() {
+            width: 160px;
+        }    
     }
 }
 
