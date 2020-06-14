@@ -14,6 +14,17 @@
         top: 0;
         text-align: center;
         transform: translate(0%, -50%);
+        &:hover {
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-name: icon-arrow;
+        animation-timing-function: linear;
+            @keyframes icon-arrow {
+            0%   { transform: translateY(-50%); }
+            50%  { transform: translateY(-70%); }
+            100% { transform: translateY(-50%); }
+            }
+        }
     }
     &__icon-arrow {
         background-color: #ffffff;
@@ -21,6 +32,10 @@
         width: 45px;
         border-radius: 50%;
         padding: 10px;
+        transition: background-color ease 1s;
+        &:hover {
+            background-color:$terciary-background;
+        }
     }
     &__components {
         display: flex;
