@@ -1,9 +1,5 @@
-.main {
-    border: 1px solid red;
-}
 
 .topsection {
-    border: 1px solid red;
     height: 376px;
     padding: 30px 0 45px 0;
     @include tablet() {
@@ -50,7 +46,7 @@
             line-height: 30px;
         }
     }
-    &__buttonGo {
+    &__buttongo {
         border: 3px solid $terciary-color;
         font-family: $primary-font;
         font-weight: bold;
@@ -83,7 +79,6 @@
 }
 
 .section {
-    border: 1px solid red;
     background-color: $second-background;
     &__article {
         display: grid;

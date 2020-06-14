@@ -1,20 +1,25 @@
 .hero {
-    border: 1px solid red;
     background: url("../images/cover.jpg");
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    padding: 284px 0 53px 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include tablet() {
+        padding: 384px 0 45px 0;
+    }
+    @include desktop() {
+        padding: 384px 0 13px 0;
+    }
+    
     &__title {
-        border: 1px solid red;
         font-family: $secondary-font;
         font-size: rem(42);
         color: $forth-color;
         text-transform: uppercase;
-        margin-top: 284px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,7 +28,6 @@
         @include tablet() {
             font-size: rem(80);
             line-height: 106px;
-            margin-top: 384px;
         }
         @include desktop() {
             font-size: rem(100);
@@ -31,7 +35,6 @@
         }
     }
     &__claim {
-        border: 1px solid red;
         font-family: $primary-font;
         font-size: rem(16);
         color: $forth-color;
@@ -45,9 +48,9 @@
     &__button {
         position: relative;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    &__iconScrollDown {
+    &__iconscrolldown {
         background-color: #ffffff;
         height: 45px;
         width: 45px;
