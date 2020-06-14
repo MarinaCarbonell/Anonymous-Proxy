@@ -43,9 +43,8 @@
         }
     }
     &__button {
-        display: inline-block;
+        position: relative;
         text-align: center;
-        margin-left: 50%;
         margin-top: 45px;
         margin-bottom: 53px;
         @include tablet() {
