@@ -3,9 +3,11 @@
     top: 0;
     z-index: 1;
     .menu-icon {
+        &__img{
         height: 44px;
         width: 44px;
         background-color: $forth-background;
         padding:15px;
+        }
     }
 }

@@ -35,7 +35,7 @@
             text-align: center;
             padding: 0 55px 30px 55px;
             @include tablet() {
-                padding: 0 15px 0 15px;
+                padding: 0 15px;
             }
             &--title {
                 font-family: $secondary-font;
