@@ -1,0 +1,80 @@
+
+.topsection {
+    height: 376px;
+    padding: 30px 0 45px 0;
+    @include tablet() {
+        height: 330px;
+        padding: 30px 0 60px 0;
+    }
+    @include desktop() {
+        height: 360px;
+        padding: 60px 194px;
+    }
+    &__title {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: rem(14);
+        color: $fifth-color;
+        @include desktop() {
+            font-size: rem(16);
+        }
+    }
+    &__maintitle {
+        font-family: $secondary-font;
+        font-weight: $bold;
+        font-size: rem(24);
+        color: $first-color;
+        line-height: 30px;
+        text-transform: capitalize;
+        @include tablet() {
+            font-size: rem(26);
+            line-height: 45px;
+        }
+        @include desktop() {
+            font-size: rem(32);
+        }
+    }
+    &__paragraph {
+        font-family: $primary-font;
+        font-weight: $regular;
+        font-size: rem(18);
+        color: $secondary-color;
+        line-height: 30px;
+        padding: 25px 0 0 0;
+        @include tablet() {
+            font-size: rem(20);
+            line-height: 30px;
+        }
+    }
+    &__buttongo {
+        border: 3px solid $terciary-color;
+        font-family: $primary-font;
+        font-weight: bold;
+        font-size: rem(20);
+        color: $terciary-color;
+        height: 45px;
+        width: 76px;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        transition: transform ease 1s;
+        transition: border-color ease 1s;
+        transition: color ease 1s;
+        &:hover {
+            margin-left: 10px;
+            transform: scale(1.2);
+            border-color: $fifth-color;
+            color: $fifth-color;
+        }
+        @include tablet() {
+            width: 91px;
+            margin-bottom: 60px;  
+        }
+        @include desktop() {
+            width: 160px;
+        }    
+    }
+}
+
